@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lover Your Living Space</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">Love Your Living Space</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Discover Your Dream Home Style</h1>
+    <p>Furniture & Decor to Match Every Taste</p>
+    <a href="#shop" class="btn">Shop Now</a>
+  </section>
+
+  <section id="shop" class="products">
+    <h2>Featured Products</h2>
+    <input type="text" id="search" placeholder="Search products...">
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Sofa">
+        <h3>Modern Sofa</h3>
+        <p class="price">$499.00</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Lamp">
+        <h3>Stylish Lamp</h3>
+        <p class="price">$79.00</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Table">
+        <h3>Wooden Table</h3>
+        <p class="price">$299.00</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Chair">
+        <h3>Comfortable Chair</h3>
+        <p class="price">$149.00</p>
+        <div class="rating">⭐⭐⭐☆☆</div>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      Love Your Living Space is your go-to destination for unique home decor,
+      modern furniture, and lifestyle inspiration.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total"></div>
+    <button id="checkout-btn" style="display:none;">Checkout</button>
+  </section>
+
+  <div id="toast"></div>
+
+  <footer>
+    <p>&copy; 2025 Love Your Living Space. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
